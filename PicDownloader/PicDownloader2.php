@@ -2,9 +2,9 @@
 if(!isset($_GET['url'])){
 	$url="http://i2.kknews.cc/large/b0a0000fe74786ad3a5";//圖片所在網址
 }else{
-	$url = "\"".$_GET['url']."\"";
+	$url = "".$_GET['url']."";
 }
-
+//$url = "http://icons.wxug.com/i/c/h/rain.gif";
 $pic=file_get_contents($url);//讀取圖片
 $type=getimagesize($url);//取得圖片資訊
 $file_content=base64_encode($pic);//base64編碼
