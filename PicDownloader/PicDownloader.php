@@ -66,5 +66,6 @@ function getImage($url,$save_dir='',$filename='',$type=0){
 }
 
 //getImage($url,$dir,$filename);
+echo $img;
 getImage("http://pbs.twimg.com/media/DDFtkjrWAAA3He9.jpg",$dir,$filename);
 ?>
